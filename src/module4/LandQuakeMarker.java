@@ -33,9 +33,23 @@ public class LandQuakeMarker extends EarthquakeMarker {
 		// and how it is set in the EarthquakeMarker constructor
 		
 		// TODO: Implement this method
-		
-	}
+	float mag=getMagnitude();
+		if(mag>THRESHOLD_MODERATE) {
+			pg.ellipse(x,y,10f,10f);
+		}
+		if(mag>=THRESHOLD_LIGHT && mag< THRESHOLD_MODERATE) {
+			pg.ellipse(x,y,7f,7f);
+		}
+		if(mag>THRESHOLD_INTERMEDIATE) {
+			pg.ellipse(x,y,14f,14f);
+		}
+
+		if(mag>THRESHOLD_DEEP) {
+			pg.ellipse(x,y,18f,18f);
+		}
 	
+	
+	}
 
 	// Get the country the earthquake is in
 	public String getCountry() {

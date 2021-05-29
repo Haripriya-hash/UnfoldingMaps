@@ -46,9 +46,20 @@ public class CityMarker extends SimplePointMarker {
 		// whose upper left corner is at position x, y
 		// Check out the processing documentation for more methods
 		
-		
+		//pg.beginShape();
+		//pg.background(100);
+		pg.fill(255, 0, 0);
+		//pg.triangle(x, y, x,y+2,x+2,y);
+		//pg.triangle(x, y-TRI_SIZE, x-TRI_SIZE, y+TRI_SIZE, x+TRI_SIZE, y+TRI_SIZE);
+		pg.triangle(x-5,y+8,x,y-8,x+5,y+8);
+
+
+		//pg.endShape();
+
 		// Restore previous drawing style
 		pg.popStyle();
+		
+		
 	}
 	
 	/* Local getters for some city properties.  You might not need these 

@@ -78,7 +78,8 @@ public void setup() {
 		 for(Marker mk:markers) {
 			  if((int) mk.getProperty("magitude") > 9.0) {
 		         mk.setColor(color(255,255,0));
-		     }else {
+		     }
+			  else {
 		         mk.setColor(color(150,150,150));
 		     }
 		     map.addMarker(mk);
@@ -99,4 +100,10 @@ private void addkey() {
 	// TODO Auto-generated method stub
 	
 }
+
+	/*public class ParseFeed{
+		public static List<PointFeature>parseEarthquake (PApplet p, String significant_month.atom){
+			
+		}
+	}*/
 }
